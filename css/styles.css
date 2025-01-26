@@ -1,0 +1,47 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #cd2a14;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+}
+
+.logo_whatsapp {
+    width: 80px;
+    height: 80px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    height: 100%;
+    list-style: none;
+    font-size: 1.5em
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hipervinculo_whatsapp {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
