@@ -62,6 +62,7 @@ a {
     width: 60%;
     background-color: #ffe100d8;
     border-radius: 15px;
+    box-shadow: 0 0 5px #00000033;
 }
 
 .pizzas_normales {
@@ -73,15 +74,16 @@ a {
 .container_pizzas_especiales {
     margin: 10px 30px;
     padding: 15px 0;
-    background-color: #ff80007d;
+    background-color: #ff330060;
     border-radius: 15px;
     text-align: center;
+    box-shadow: 0 0 5px #00000033;
 }
 
 .texto_pizzas_especiales {
     font-size: 1.5em;
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .pizzas_especiales {
@@ -113,6 +115,9 @@ ol li p {
     gap: 10px;
     background-color: #cd2a14de;
     color: #fff;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000000;
+
 }
 
 .logo_telefono {
@@ -123,4 +128,48 @@ ol li p {
 
 .telefono {
     font-size: 2em
+}
+
+.container_footer {
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    color: #fff;
+}
+
+.container_medios_de_pago {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo_medios_de_pago {
+    width: 40px;
+    height: 40px;
+}
+
+.datos_local {
+    display: flex;
+    flex-direction: column;
+}
+
+.ubicacion {
+    width: 300px;
+    border-radius: 4px;
+}
+
+.container_footer p {
+    margin: 0 0 9px 0;
+    font-size: 1.3em;
+}
+
+.desarrollado {
+    padding: 8px 0;
+    margin: 0;
+    color: #fff;
+    font-size: 16px;
+    background-color: #333;
+    text-align: center;
+    border-top: 1px solid #000;
 }
