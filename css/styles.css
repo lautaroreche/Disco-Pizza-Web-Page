@@ -104,3 +104,23 @@ ol li p {
     justify-content: space-between;
     width: 300px;
 }
+
+.telefono_section {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #cd2a14de;
+    color: #fff;
+}
+
+.logo_telefono {
+    width: 60px;
+    height: 60px;
+    
+}
+
+.telefono {
+    font-size: 2em
+}
