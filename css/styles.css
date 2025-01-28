@@ -42,6 +42,32 @@ a {
     color: #fff;
 }
 
+.opcion_menu {
+    position: relative;
+    padding: 10px 5px;
+    transition: color 0.3s ease;
+}
+
+.opcion_menu::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffe100d8;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.opcion_menu:hover {
+    color: #ffe100d8; /* Cambia el color del texto al pasar el mouse */
+}
+
+.opcion_menu:hover::after {
+    width: 100%;
+    left: 0;
+}
+
 .hipervinculo_whatsapp {
     display: flex;
     align-items: center;
@@ -107,23 +133,26 @@ ol li p {
     width: 300px;
 }
 
-.telefono_section {
+.telefono_section{
     padding: 10px;
+    background-color: #cd2a14de;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
     display: flex;
     justify-content: center;
+}
+
+
+.hipervinculo_telefono_section {
+    display: inline-flex;
     align-items: center;
     gap: 10px;
-    background-color: #cd2a14de;
-    color: #fff;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000000;
-
 }
 
 .logo_telefono {
     width: 60px;
     height: 60px;
-    
+    color: #fff;
 }
 
 .telefono {
