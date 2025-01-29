@@ -202,13 +202,34 @@ ol li p {
     border-top: 1px solid #000;
 }
 
+
+@media (max-width: 1110px) {
+    .menu {
+        width: 70%;
+    }
+}
+
+
 @media (max-width: 1000px) {
     .container_whatsapp {
         display: none;
     }
+
+    .menu {
+        width: 80%;
+    }
 }
 
+
 @media (max-width: 870px) {
+    .menu ol li  {
+        width: 250px;
+    }
+
+    .container_pizzas_especiales {
+        margin: 10px;
+    }
+
     nav ul {
         display: none;
     }
@@ -221,10 +242,6 @@ ol li p {
         color: #fff;
         font-size: 2.7em;
         cursor: pointer;
-    }
-
-    #check_menu_hamburguesa {
-        display: none;
     }
 
     #check_menu_hamburguesa:checked ~ ul {
@@ -244,22 +261,82 @@ ol li p {
     }
 
     nav ul li a {
-        color: #fff;
         font-size: 1.4em;
     }
+}
 
-    .opcion_menu::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        width: 0;
-        height: 2px;
-        background-color: #ffe100d8;
-        transition: width 0.3s ease, left 0.3s ease;
+
+@media (max-width: 680px) {
+    .menu {
+        width: 90%;
+    }
+
+    .container_footer{
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+
+@media (max-width: 580px) {
+    .pizzas_normales, .pizzas_especiales {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        width: 80%;
+    }
+
+    .menu ol li {
+        width: 350px;
+    }
+
+    nav ul li a {
+        font-size: 1.3em;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .menu {
+        width: 85%;
+    }
+
+    .menu ol li {
+        width: 250px;
+    }
+
+    .logo_telefono {
+        width: 50px;
+        height: 50px;
+    }
+
+    .telefono {
+        font-size: 1.5em;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .menu {
+        width: 95%;
+    }
+
+    .logo_telefono {
+        width: 30px;
+        height: 30px;
     }
     
-    .opcion_menu:hover {
-        color: #ffe100d8;
+    .telefono {
+        font-size: 1.2em;
+    }
+
+    .container_footer p {
+        font-size: 1.1em;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
     }
 }
