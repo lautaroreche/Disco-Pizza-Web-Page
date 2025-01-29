@@ -4,7 +4,7 @@ body {
     padding: 0;
 }
 
-#check_menu_hamburguesa, .menu_hamburguesa {
+#check-menu-hamburguesa, .menu-hamburguesa {
     display: none;
 }
 
@@ -24,7 +24,7 @@ header {
     height: 100px;
 }
 
-.logo_whatsapp {
+.logo-whatsapp {
     width: 70px;
     height: 70px;
 }
@@ -46,13 +46,13 @@ a {
     color: #fff;
 }
 
-.opcion_menu {
+.opcion-menu {
     position: relative;
     padding: 10px 5px;
     transition: color 0.3s ease;
 }
 
-.opcion_menu::after {
+.opcion-menu::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -63,22 +63,22 @@ a {
     transition: width 0.3s ease, left 0.3s ease;
 }
 
-.opcion_menu:hover {
+.opcion-menu:hover {
     color: #ffe100d8;
 }
 
-.opcion_menu:hover::after {
+.opcion-menu:hover::after {
     width: 100%;
     left: 0;
 }
 
-.hipervinculo_whatsapp {
+.hipervinculo-whatsapp {
     display: flex;
     align-items: center;
     height: 100%;
 }
 
-.menu_section {
+.menu-section {
     width: 100%;
     background-image: url('../images/fondo.png');
     background-size: cover;
@@ -95,13 +95,13 @@ a {
     box-shadow: 0 0 5px #00000033;
 }
 
-.pizzas_normales {
+.pizzas-normales {
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
 
-.container_pizzas_especiales {
+.container-pizzas-especiales {
     margin: 10px 30px;
     padding: 15px 0;
     background-color: #ff330060;
@@ -110,13 +110,13 @@ a {
     box-shadow: 0 0 5px #00000033;
 }
 
-.texto_pizzas_especiales {
+.texto-pizzas-especiales {
     font-size: 1.5em;
     margin-top: 0;
     margin-bottom: 10px;
 }
 
-.pizzas_especiales {
+.pizzas-especiales {
     display: flex;
     justify-content: space-around;
 }
@@ -137,7 +137,7 @@ ol li p {
     width: 300px;
 }
 
-.telefono_section{
+.telefono-section{
     padding: 10px;
     background-color: #cd2a14de;
     border-top: 1px solid #000;
@@ -147,13 +147,13 @@ ol li p {
 }
 
 
-.hipervinculo_telefono_section {
+.telefono-section a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
 }
 
-.logo_telefono {
+.logo-telefono {
     width: 60px;
     height: 60px;
     color: #fff;
@@ -163,7 +163,7 @@ ol li p {
     font-size: 2em
 }
 
-.container_footer {
+.container-footer {
     padding: 40px;
     display: flex;
     justify-content: space-around;
@@ -174,19 +174,19 @@ ol li p {
     font-weight: 400;
 }
 
-.container_medios_de_pago, .container_horario {
+.container-medios-de-pago, .container-horario {
     display: flex;
     justify-content: center;
     gap: 15px;
 }
 
-.medio_de_pago {
+.medio-de-pago {
     font-size: 1.5em;
     font-weight: 100;
     margin-bottom: 9px;
 }
 
-.container_footer p {
+.container-footer p {
     margin: 0 0 9px 0;
     font-size: 1.3em;
 }
@@ -210,7 +210,7 @@ ol li p {
 
 
 @media (max-width: 1000px) {
-    .container_whatsapp {
+    .container-whatsapp {
         display: none;
     }
 
@@ -225,7 +225,7 @@ ol li p {
         width: 250px;
     }
 
-    .container_pizzas_especiales {
+    .container-pizzas-especiales {
         margin: 10px;
     }
 
@@ -233,7 +233,7 @@ ol li p {
         display: none;
     }
 
-    .menu_hamburguesa {
+    .menu-hamburguesa {
         display: block;
     }
 
@@ -243,7 +243,7 @@ ol li p {
         cursor: pointer;
     }
 
-    #check_menu_hamburguesa:checked ~ ul {
+    #check-menu-hamburguesa:checked ~ ul {
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -255,7 +255,7 @@ ol li p {
         background-color: #cd2a14f9;
     }
 
-    #check_menu_hamburguesa:checked ~ ul {
+    #check-menu-hamburguesa:checked ~ ul {
         padding-top: 40px;
     }
 
@@ -270,7 +270,7 @@ ol li p {
         width: 90%;
     }
 
-    .container_footer{
+    .container-footer{
         flex-direction: column;
         gap: 40px;
     }
@@ -282,7 +282,7 @@ ol li p {
 
 
 @media (max-width: 580px) {
-    .pizzas_normales, .pizzas_especiales {
+    .pizzas-normales, .pizzas-especiales {
         flex-direction: column;
         align-items: center;
     }
@@ -310,7 +310,7 @@ ol li p {
         width: 270px;
     }
 
-    .logo_telefono {
+    .logo-telefono {
         width: 50px;
         height: 50px;
     }
@@ -326,7 +326,7 @@ ol li p {
         width: 95%;
     }
 
-    .logo_telefono {
+    .logo-telefono {
         width: 30px;
         height: 30px;
     }
@@ -335,7 +335,7 @@ ol li p {
         font-size: 1.2em;
     }
 
-    .container_footer p {
+    .container-footer p {
         font-size: 1.1em;
     }
 
@@ -350,14 +350,14 @@ ol li p {
         font-size: 0.9em;
     }
 
-    .container_pizzas_especiales {
+    .container-pizzas-especiales {
         background-color: transparent;
         box-shadow: none;
         margin: 0;
         padding: 0;
     }
 
-    .texto_pizzas_especiales {
+    .texto-pizzas-especiales {
         display: none;
     }
 }
