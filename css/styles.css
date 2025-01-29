@@ -4,10 +4,15 @@ body {
     padding: 0;
 }
 
+#check_menu_hamburguesa, .menu_hamburguesa {
+    display: none;
+}
+
 header {
     padding: 0 30px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #cd2a14;
     width: 100vw;
     box-sizing: border-box;
@@ -60,7 +65,7 @@ a {
 }
 
 .opcion_menu:hover {
-    color: #ffe100d8; /* Cambia el color del texto al pasar el mouse */
+    color: #ffe100d8;
 }
 
 .opcion_menu:hover::after {
@@ -167,7 +172,7 @@ ol li p {
     background-color: #444;
     color: #fff;
     text-align: center;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .container_medios_de_pago, .container_horario {
@@ -176,9 +181,10 @@ ol li p {
     gap: 15px;
 }
 
-.logo_medios_de_pago {
-    width: 40px;
-    height: 40px;
+.medio_de_pago {
+    font-size: 1.5em;
+    font-weight: 100;
+    margin-bottom: 9px;
 }
 
 .container_footer p {
@@ -194,4 +200,66 @@ ol li p {
     background-color: #333;
     text-align: center;
     border-top: 1px solid #000;
+}
+
+@media (max-width: 1000px) {
+    .container_whatsapp {
+        display: none;
+    }
+}
+
+@media (max-width: 870px) {
+    nav ul {
+        display: none;
+    }
+
+    .menu_hamburguesa {
+        display: block;
+    }
+
+    .fa-bars {
+        color: #fff;
+        font-size: 2.7em;
+        cursor: pointer;
+    }
+
+    #check_menu_hamburguesa {
+        display: none;
+    }
+
+    #check_menu_hamburguesa:checked ~ ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        position: absolute;
+        top: 90.75px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #cd2a14f9;
+    }
+
+    #check_menu_hamburguesa:checked ~ ul {
+        padding-top: 40px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        font-size: 1.4em;
+    }
+
+    .opcion_menu::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #ffe100d8;
+        transition: width 0.3s ease, left 0.3s ease;
+    }
+    
+    .opcion_menu:hover {
+        color: #ffe100d8;
+    }
 }
