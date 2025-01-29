@@ -6,6 +6,8 @@
     <title>Disco Pizza</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="../images/favicon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -13,18 +15,22 @@
             <a href="index.html"><img class="logo" src="../images/logo.png" alt="Disco Pizza"></a>
         </div>
         <nav>
+            <input type="checkbox" id="check_menu_hamburguesa">
+            <label for="check_menu_hamburguesa" class="menu_hamburguesa">
+                <i class="fas fa-bars"></i>
+            </label>
             <ul>
-                <li class="opcion_menu"><a href="index.html">Menú</a></li>
-                <li class="opcion_menu"><a href="#telefono">Teléfono</a></li>
-                <li class="opcion_menu"><a href="#informacion">Información</a></li>
-                <li class="opcion_menu"><a href="https://api.whatsapp.com/send?phone=390932515841&text=Ciao!%20Vorrei%20ordinare%20per%20favore%20..." target="_blank" rel="noreferrer">Ordena aquí</a></li>
+                <li class="opcion_menu"><a href="#menu_section" onclick="toggleCheckbox()">Menú</a></li>
+                <li class="opcion_menu"><a href="#telefono" onclick="toggleCheckbox()">Teléfono</a></li>
+                <li class="opcion_menu"><a href="#informacion" onclick="toggleCheckbox()">Información</a></li>
+                <li class="opcion_menu"><a href="https://api.whatsapp.com/send?phone=390932515841&text=Ciao!%20Vorrei%20ordinare%20per%20favore%20..." target="_blank" rel="noreferrer" onclick="toggleCheckbox()">Ordena aquí</a></li>
             </ul>
         </nav>
-        <div>
+        <div class="container_whatsapp">
             <a href="https://api.whatsapp.com/send?phone=390932515841&text=Ciao!%20Vorrei%20ordinare%20per%20favore%20..." target="_blank" rel="noreferrer" class="hipervinculo_whatsapp"><img class="logo_whatsapp" src="../images/logo_whatsapp.png" alt="Logo de WhatsApp"></a>
         </div>
     </header>
-    <main class="menu_section">
+    <main class="menu_section" id="menu_section">
         <div class="menu">
             <div class="pizzas_normales">
                 <div>
@@ -290,9 +296,9 @@
             <div>
                 <p>Medios de pago</p>
                 <div class="container_medios_de_pago">
-                    <img src="../images/logo_billete.png" alt="Billetes cash" class="logo_medios_de_pago">
-                    <img src="../images/logo_tarjeta.png" alt="Tarjetas de crédito y débito" class="logo_medios_de_pago">
-                    <img src="../images/logo_paypal.png" alt="Logo Paypal" class="logo_medios_de_pago">
+                    <i class="fa-regular fa-money-bill-1 medio_de_pago"></i>
+                    <i class="fa-regular fa-credit-card medio_de_pago"></i>
+                    <i class="fa-brands fa-paypal medio_de_pago"></i>
                 </div>
             </div>
             <div>
@@ -301,7 +307,7 @@
             </div>
             <div>
                 <p>Via del Mandorlo 18</p>
-                <p>97017, Casuzze</p>
+                <p>Casuzze, 97017</p>
                 <p>Ragusa, Sicilia</p>
             </div>
         </div>
@@ -309,3 +315,9 @@
     <p class="desarrollado">Desarrollado por Lautaro Reche</p>
 </body>
 </html>
+
+<script>
+    function toggleCheckbox() {
+        document.getElementById('check_menu_hamburguesa').checked = false;
+    }
+</script>
