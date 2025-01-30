@@ -191,7 +191,7 @@ ol li p {
     font-size: 1.3em;
 }
 
-.desarrollado {
+.desarrollado, .desarrollado a {
     padding: 8px 0;
     margin: 0;
     color: #fff;
