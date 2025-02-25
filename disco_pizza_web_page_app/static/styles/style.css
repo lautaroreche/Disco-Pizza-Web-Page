@@ -80,7 +80,7 @@ a {
 
 .menu-section {
     width: 100%;
-    background-image: url("{% static 'images/fondo.png' %}");
+    background-image: url('/static/images/fondo.png');
     background-size: cover;
     display: flex;
     justify-content: center;
