@@ -1,0 +1,358 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#check-menu-hamburguesa, .menu-hamburguesa {
+    display: none;
+}
+
+header {
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cd2a14;
+    width: 100vw;
+    box-sizing: border-box;
+    border-bottom: 1px solid #000;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.logo-whatsapp {
+    width: 70px;
+    height: 70px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    height: 100%;
+    list-style: none;
+    font-size: 1.5em
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.opcion-menu {
+    position: relative;
+    padding: 10px 5px;
+    transition: color 0.3s ease;
+}
+
+.opcion-menu::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffe100d8;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.opcion-menu:hover {
+    color: #ffe100d8;
+}
+
+.opcion-menu:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.hipervinculo-whatsapp {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.menu-section {
+    width: 100%;
+    background-image: url("{% static 'images/fondo.png' %}");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    margin: 20px 0;
+    padding: 20px 0;
+    width: 60%;
+    background-color: #ffe100d8;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #00000033;
+}
+
+.pizzas-normales {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+ol li p {
+    margin: 3px;
+    font-size: 0.9em;
+}
+
+.menu ol li  {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.telefono-section{
+    padding: 10px;
+    background-color: #cd2a14de;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: center;
+}
+
+
+.telefono-section a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-telefono {
+    width: 60px;
+    height: 60px;
+    color: #fff;
+}
+
+.telefono {
+    font-size: 2em
+}
+
+.container-footer {
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+}
+
+.container-medios-de-pago, .container-horario {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.medio-de-pago {
+    font-size: 1.5em;
+    font-weight: 100;
+    margin-bottom: 9px;
+}
+
+.container-footer p {
+    margin: 0 0 9px 0;
+    font-size: 1.3em;
+}
+
+.desarrollado, .desarrollado a {
+    padding: 8px 0;
+    margin: 0;
+    color: #fff;
+    font-size: 16px;
+    background-color: #333;
+    text-align: center;
+    border-top: 1px solid #000;
+    text-decoration: none;
+}
+
+
+@media (max-width: 1110px) {
+    .menu {
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .container-whatsapp {
+        display: none;
+    }
+
+    .menu {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 870px) {
+    .menu ol li  {
+        width: 250px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .menu-hamburguesa {
+        display: block;
+    }
+
+    .fa-bars {
+        color: #fff;
+        font-size: 2.7em;
+        cursor: pointer;
+    }
+
+    #check-menu-hamburguesa:checked ~ ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        position: absolute;
+        top: 90.75px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #cd2a14f9;
+    }
+
+    #check-menu-hamburguesa:checked ~ ul {
+        padding-top: 40px;
+    }
+
+    nav ul li a {
+        font-size: 1.4em;
+    }
+}
+
+
+@media (max-width: 680px) {
+    .menu {
+        width: 90%;
+    }
+
+    .container-footer{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    nav ul li a {
+        font-size: 1.6em;
+    }
+}
+
+
+@media (max-width: 580px) {
+    .pizzas-normales {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        width: 80%;
+    }
+
+    .menu ol li {
+        width: 350px;
+    }
+
+    nav ul li a {
+        font-size: 1.3em;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .menu {
+        width: 85%;
+    }
+
+    .menu ol li {
+        width: 270px;
+    }
+
+    .logo-telefono {
+        width: 50px;
+        height: 50px;
+    }
+
+    .telefono {
+        font-size: 1.5em;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .menu {
+        width: 95%;
+    }
+
+    .logo-telefono {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .telefono {
+        font-size: 1.2em;
+    }
+
+    .container-footer p {
+        font-size: 1.1em;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 310px) {
+    .menu ol li {
+        width: 230px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 250px) {
+    .menu {
+        width: 85%;
+    }
+
+    .menu ol li {
+        width: 200px;
+        font-size: 0.8em;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+    }
+
+    .menu ol li p:last-of-type {
+        display: none;
+    }
+
+    .fa-bars {
+        font-size: 2em;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+}
